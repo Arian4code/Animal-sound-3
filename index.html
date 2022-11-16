@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+      <title>Animal Sound Recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+      <div class="col-xs-12 header_div text-center">
+        <h2>Sound controlled Pets</h2>
+        <p>Note: Make Animal Sounds Like<b>Dogs Barking, Cats Meowing Fish blubbing and Hamsters squealing</b> to make the animals move</p>
+      </div>
+      <div class="main_div">
+        <center>
+          <br>
+          <button class="btn btn-warning" onclick="startClassification();"> START </button>
+          <h3 id="result_label">I can hear - </h3>
+          <h4 id="result_confidence">Accuracy - </h4>
+          <br>
+          <img src="pet-01.png" id="Dog" width="300" height="300">
+          <img src="pet-02.png" id="Cat" width="300" height="300">
+          <img src="pet-03.png" id="Fish" width="300" height="300">
+          <img src="pet-04.png" id="Hamster" width="300" height="300">
+        </center>
+      </div>
+      <div class="copy_right_footer">
+        Devoloped by - Arian Posham
+      </div>
+  <script src="main.js"></script>
+    </body>
+  </html>
